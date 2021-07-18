@@ -1,0 +1,19 @@
+algoritmo "Ano_bissexto"
+// Função :  Descobrir se um ano é bissexto ou não.
+// Autor : Gabriel F. Albuquerque
+// Data : 7/18/2021
+//  Bissexto - Um ano é bissexto se ele for divisível por 400 ou se ele
+//         for divisível por 4 e não por 100.
+// Bissexto:  1980, 1984, 1988, 1992, 1996 e 2000.
+//          1900 não foi bissexto, mas 1600 foi
+var
+ano: inteiro
+inicio
+      escreval ("Informe um ano: ")
+      leia(ano)
+      se (ano % 400 =0) ou (ano % 4 =0) e (ano % 100 <> 0) entao
+      escreval ("O ano é bissexto!")
+      senao
+      escreval ("O ano não é bissexto! ")
+      fimse
+fimalgoritmo
